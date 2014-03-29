@@ -20,6 +20,14 @@ POST `/api/login`
 Как альтернативу этому заголовку можно использовать cookie "user", которая должна содержать этот же token.
 
 #### Ответ ####
+Пример запроса:
+```
+http://point.im/api/login
+```
+```
+login=xxx&password=yyy
+```
+Пример ответа:
 ```
 {
   /* Авторизационный токен */
@@ -37,12 +45,22 @@ POST `/api/logout`
 `csrf_token` — Обязательный параметр. Получается в `/api/login`.
 
 #### Ответ ####
+Пример запроса:
+```
+http://point.im/api/logout
+```
+```
+csrf_token=109f4b3c50d7b0df729d299bc6f8e9ef9066971f
+```
+
 Сервер вернёт код ответа [403 Forbidden](http://ru.wikipedia.org/wiki/Список_кодов_состояния_HTTP#.D0.9E.D1.88.D0.B8.D0.B1.D0.BA.D0.B0_.D0.BA.D0.BB.D0.B8.D0.B5.D0.BD.D1.82.D0.B0).
 
 
 # Посты
 
 ## Обычные посты ##
+
+> Примеры запросов, требующих авторизации сделаны от имени [@skobkin-ru](http://skobkin-ru.point.im/)
 
 ### Список последних записей в ленте ###
 #### Запрос ####
@@ -54,6 +72,11 @@ GET `/api/recent`
 Необходима аутентификация.
 
 #### Ответ ####
+Пример запроса:
+```
+http://point.im/api/recent
+```
+Пример ответа:
 ```
 {
   /* Наличие кнопки "Предыдущие */
@@ -119,6 +142,10 @@ GET `/api/blog/<login>`
 `before` — идентификатор записи, от которой нужно начать выборку. Не включает запись.
 
 #### Ответ ####
+Пример запроса:
+```
+http://point.im/api/blog/skobkin-ru
+```
 Структура ответа аналогична `/api/recent`
 
 
@@ -131,6 +158,10 @@ GET `/api/comments`
 
 Необходима аутентификация.
 #### Ответ ####
+Пример запроса:
+```
+http://point.im/api/comments
+```
 
 ## Личные сообщения ##
 
@@ -146,6 +177,10 @@ GET `/api/messages/incoming`
 Необходима аутентификация.
 
 #### Ответ ####
+Пример запроса:
+```
+http://point.im/api/messages/incoming
+```
 Структура ответа аналогична `/api/recent`
 
 ### Список исходящих сообщений
@@ -158,6 +193,10 @@ GET `/api/messages/outgoing`
 Необходима аутентификация.
 
 #### Ответ ####
+Пример запроса:
+```
+http://point.im/api/messages/outgoing
+```
 Структура ответа аналогична `/api/recent`
 
 
@@ -168,6 +207,11 @@ GET `/api/messages/outgoing`
 GET `/api/post/<post>`
 
 #### Ответ ####
+Пример запроса:
+```
+http://point.im/api/post/llq
+```
+Пример ответа:
 ```
 {
   /* Объект поста */
@@ -247,6 +291,11 @@ GET `/api/post/<post>`
 GET `/api/tags/<login>`
 
 #### Ответ ####
+Примеры запроса:
+```
+http://point.im/api/tags/skobkin-ru
+```
+Пример ответа:
 ```
 [
   /* Объект тега */
@@ -273,6 +322,10 @@ GET `/api/tags`
 Можно указывать несколько тегов.
 
 #### Ответ ####
+Пример запроса:
+```
+http://point.im/api/tags?tag=guitar
+```
 Структура ответа аналогична `/api/recent`
 
 ### Выборка постов по тегам пользователя
@@ -286,6 +339,13 @@ GET `/api/tags/<login>`
 Можно указывать несколько тегов.
 
 #### Ответ ####
+Примеры запроса:
+```
+http://point.im/api/tags/skobkin-ru?tag=guitar
+```
+```
+http://point.im/api/tags/skobkin-ru?tag=guitar&tag=test
+```
 Структура ответа аналогична `/api/recent`
 
 # Пользователи
@@ -297,6 +357,11 @@ GET `/api/user/<login>`
 user - имя пользователя
 
 #### Ответ ####
+Пример запроса:
+```
+http://point.im/api/user/skobkin-ru
+```
+Пример ответа:
 ```
 {
   /* Заметка пользователя о себе */
@@ -349,10 +414,26 @@ size - размер аватара: 20, 40, 80
 avatar_name.ext - имя файла аватара (параметр `avatar`), получаемое с помощью метода `/api/user/<login>`
 
 #### Ответ ####
-
- - 24: ![24](http://i.point.im/a/24/skobkin-ru.jpg "24")
- - 40: ![40](http://i.point.im/a/40/skobkin-ru.jpg "40")
- - 80: ![80](http://i.point.im/a/80/skobkin-ru.jpg "80")
+Пример запроса:
+24
+```
+http://i.point.im/a/24/skobkin-ru.jpg
+```
+40
+```
+http://i.point.im/a/40/skobkin-ru.jpg
+```
+80
+```
+http://i.point.im/a/80/skobkin-ru.jpg
+```
+Пример ответа:
+24:
+![24](http://i.point.im/a/24/skobkin-ru.jpg "24")
+40:
+![40](http://i.point.im/a/40/skobkin-ru.jpg "40")
+80:
+![80](http://i.point.im/a/80/skobkin-ru.jpg "80")
 
 ### Редирект на аватар пользователя ###
 #### Запрос ####
