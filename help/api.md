@@ -255,20 +255,26 @@ GET `/api/tags/<login>`
 Можно указывать несколько тегов.
 
 # Пользователи
-### Аватар пользователя ###
-```
-http(s)://i.point.im/a/<size>/<user>
-```
-size:
-
- - 24
- - 40
- - 80
-
 
 ### Информация о пользователе
 
 GET `/api/user/<login>`
+
+### Аватар пользователя ###
+#### Запрос ####
+```
+http(s)://i.point.im/a/<size>/<avatar_name.ext>
+```
+#### Параметры
+size - размер аватара: 20, 40, 80
+
+avatar_name.ext - имя файла аватара (параметр `avatar`), получаемое с помощью метода `/api/user/<login>`
+
+#### Ответ ####
+
+ - 24: ![24](http://i.point.im/a/24/skobkin-ru.jpg "24")
+ - 40: ![40](http://i.point.im/a/40/skobkin-ru.jpg "40")
+ - 80: ![80](http://i.point.im/a/80/skobkin-ru.jpg "80")
 
 ### Подписки пользователя
 
