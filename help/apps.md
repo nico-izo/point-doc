@@ -1,58 +1,40 @@
-{% extends "/help/base.html" %}
+# Приложения
 
-{% block subheader %}
-<a class="breadcrumb" href="/help/">Справка</a>
-<span class="breadcrumb active">Приложения</span>
-{% endblock %}
+Для того, чтобы пользоваться сервисом, Вам не нужно ничего устанавливать&nbsp;— достаточно вашего любимого Jabber-клиента или любого браузера. Ну, почти любого - IE 8 и ниже мы браузером не считаем:-)
 
-{% block content %}
-<h1>Приложения</h1>
-
-<p>
-Для того, чтобы пользоваться сервисом, Вам не нужно ничего устанавливать&nbsp;&mdash; достаточно вашего любимого Jabber-клиента или любого браузера. Ну, почти любого&nbsp;&mdash; IE 8 и ниже мы браузером не считаем:-)
-</p>
-<p>
 Однако, некоторые программы могут помочь Вам сделать использование сервиса чуть более удобным.
-</p>
 
-<div class="clearfix">
-<h2>Psi+</h2>
-<a href="{{env.request.protocol}}://{{settings.domain}}/img/help/psi-plus.png"><img src="{{env.request.protocol}}://{{settings.domain}}/img/help/psi-plus-thumb.jpg" alt="Psi" class="thumb"/></a>
-<p>
+## Psi+
+
+[![Psi]({{env.request.protocol}}://{{settings.domain}}/img/help/psi-plus-thumb.jpg)]({{env.request.protocol}}://{{settings.domain}}/img/help/psi-plus.png)
+
 Популярный мультиплатформенный jabber-клиент, поддерживает XHTML-IM (XEP-0071),
 что позволит Вам использовать XMPP-ссылки вместо того, чтобы вводить команды вручную.
-</p>
-<p>Для того, чтобы включить режим XHTML-IM, просто скажите боту <code>set xhtml on</code>.
 
-<p><a href="http://psi-plus.com/">http://psi-plus.com/</a></p>
-</div>
+Для того, чтобы включить режим XHTML-IM, просто скажите боту `set xhtml on`.
 
-<div class="clearfix">
-<h2>LeechCraft</h2>
-<a href="{{env.request.protocol}}://{{settings.domain}}/img/help/leechcraft.png"><img src="{{env.request.protocol}}://{{settings.domain}}/img/help/leechcraft-thumb.jpg" alt="LeechCraft" class="thumb"/></a>
-<p>
+[http://psi-plus.com/](http://psi-plus.com/)
+
+## LeechCraft
+
+[![LeechCraft]({{env.request.protocol}}://{{settings.domain}}/img/help/leechcraft-thumb.jpg)]({{env.request.protocol}}://{{settings.domain}}/img/help/leechcraft.png)
+
 Мультиплатформенный модульный комбайн со встроенным jabber-клиентом, также поддерживает XHTML-IM.
-</p>
 
-<p><a href="http://leechcraft.org/">http://leechcraft.org/</a></p>
-</div>
+[http://leechcraft.org/](http://leechcraft.org/)
 
-<div class="clearfix">
-<h2>Emacs point.el</h2>
-<a href="{{env.request.protocol}}://{{settings.domain}}/img/help/emacs-point-el.png"><img src="{{env.request.protocol}}://{{settings.domain}}/img/help/emacs-point-el-thumb.jpg" alt="Emacs point.el" class="thumb"/></a>
-<p>
-Для этой вундервафли от <a href="https://en.wikipedia.org/wiki/Stallman">Человека-стола</a>, претендующей на звание операционной системы, тоже есть велосипед.
-</p>
-<p><a href="https://github.com/rayslava/emacs-point-el">https://github.com/rayslava/emacs-point-el</a></p>
-</div>
+## Emacs point.el
 
-<div class="clearfix">
-<h2>QIP 2012</h2>
-<a href="{{env.request.protocol}}://{{settings.domain}}/img/help/qip2012.png"><img src="{{env.request.protocol}}://{{settings.domain}}/img/help/qip2012-thumb.png" alt="QIP 2012" class="thumb"/></a>
-<p>
+[![Emacs point.el]({{env.request.protocol}}://{{settings.domain}}/img/help/emacs-point-el-thumb.jpg)]({{env.request.protocol}}://{{settings.domain}}/img/help/emacs-point-el.png)
+
+Для этой вундервафли от [Человека-стола](https://en.wikipedia.org/wiki/Stallman), претендующей на звание операционной системы, тоже есть велосипед.
+
+[https://github.com/rayslava/emacs-point-el](https://github.com/rayslava/emacs-point-el)
+
+## QIP 2012
+
+[![QIP 2012]({{env.request.protocol}}://{{settings.domain}}/img/help/qip2012-thumb.png)]({{env.request.protocol}}://{{settings.domain}}/img/help/qip2012.png)
+
 Плагин для проприетарного мультипротокольного мессенджера QIP 2012.
-</p>
-<p><a href="http://f.skobkin.ru/soft/qip/point/point.7z">http://f.skobkin.ru/soft/qip/point/point.7z</a></p>
-</div>
 
-{% endblock %}
+[https://github.com/Sega-Zero/point.im/releases](https://github.com/Sega-Zero/point.im/releases)
