@@ -6,7 +6,7 @@
 
 ## Psi+
 
-[![Psi]({{env.request.protocol}}://{{settings.domain}}/img/help/psi-plus-thumb.jpg)]({{env.request.protocol}}://{{settings.domain}}/img/help/psi-plus.png)
+[![Psi](/img/help/psi-plus-thumb.jpg)](/img/help/psi-plus.png)
 
 Популярный мультиплатформенный jabber-клиент, поддерживает XHTML-IM (XEP-0071),
 что позволит Вам использовать XMPP-ссылки вместо того, чтобы вводить команды вручную.
@@ -17,7 +17,7 @@
 
 ## LeechCraft
 
-[![LeechCraft]({{env.request.protocol}}://{{settings.domain}}/img/help/leechcraft-thumb.jpg)]({{env.request.protocol}}://{{settings.domain}}/img/help/leechcraft.png)
+[![LeechCraft](/img/help/leechcraft-thumb.jpg)](/img/help/leechcraft.png)
 
 Мультиплатформенный модульный комбайн со встроенным jabber-клиентом, также поддерживает XHTML-IM.
 
@@ -25,7 +25,7 @@
 
 ## Emacs point.el
 
-[![Emacs point.el]({{env.request.protocol}}://{{settings.domain}}/img/help/emacs-point-el-thumb.jpg)]({{env.request.protocol}}://{{settings.domain}}/img/help/emacs-point-el.png)
+[![Emacs point.el](/img/help/emacs-point-el-thumb.jpg)](/img/help/emacs-point-el.png)
 
 Для этой вундервафли от [Человека-стола](https://en.wikipedia.org/wiki/Stallman), претендующей на звание операционной системы, тоже есть велосипед.
 
@@ -33,7 +33,7 @@
 
 ## QIP 2012
 
-[![QIP 2012]({{env.request.protocol}}://{{settings.domain}}/img/help/qip2012-thumb.png)]({{env.request.protocol}}://{{settings.domain}}/img/help/qip2012.png)
+[![QIP 2012](/img/help/qip2012-thumb.png)](/img/help/qip2012.png)
 
 Плагин для проприетарного мультипротокольного мессенджера QIP 2012.
 
