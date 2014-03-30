@@ -33,8 +33,7 @@ http://point.im/api/login
 login=xxx&password=yyy
 ```
 Пример ответа:
-```
-#!js
+```js
 {
   /* Авторизационный токен */
   "token": "b444ac06613fc8d63795be9ad0beaf55011936ac",
@@ -63,8 +62,7 @@ csrf_token=109f4b3c50d7b0df729d299bc6f8e9ef9066971f
 ```
 
 Пример ответа:
-```
-#!js
+```js
 { "ok": true }
 ```
 
@@ -94,8 +92,7 @@ GET `/api/recent`
 http://point.im/api/recent
 ```
 Пример ответа:
-```
-#!js
+```js
 {
   /* Наличие кнопки "Предыдущие */
   "has_next": true,
@@ -250,8 +247,7 @@ GET `/api/post/<post>`
 http://point.im/api/post/llq
 ```
 Пример ответа:
-```
-#!js
+```js
 {
   /* Объект поста */
   "post": {
@@ -338,8 +334,7 @@ GET `/api/tags/<login>`
 http://point.im/api/tags/skobkin-ru
 ```
 Пример ответа:
-```
-#!js
+```js
 [
   /* Объект тега */
   {
@@ -419,8 +414,7 @@ GET `/api/user/<login>`
 http://point.im/api/user/skobkin-ru
 ```
 Пример ответа:
-```
-#!js
+```js
 {
   /* Заметка пользователя о себе */
   "about": "PHP, guitar, World of Tanks",
@@ -529,8 +523,7 @@ GET `/api/user/<login>/subscriptions`
 http://point.im/api/user/skobkin-ru/subscriptions
 ```
 Пример ответа:
-```
-#!js
+```js
 [
   /* Объект пользователя */
   {
