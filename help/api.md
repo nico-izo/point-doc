@@ -53,7 +53,12 @@ http://point.im/api/logout
 csrf_token=109f4b3c50d7b0df729d299bc6f8e9ef9066971f
 ```
 
-Сервер вернёт код ответа [403 Forbidden](http://ru.wikipedia.org/wiki/Список_кодов_состояния_HTTP#.D0.9E.D1.88.D0.B8.D0.B1.D0.BA.D0.B0_.D0.BA.D0.BB.D0.B8.D0.B5.D0.BD.D1.82.D0.B0).
+Пример ответа:
+```
+{
+    "ok": true
+}
+```
 
 
 # Посты #
