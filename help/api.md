@@ -98,7 +98,7 @@ http://point.im/api/recent
   "has_next": true,
   /* Массив постов */
   "posts": [
-    /* Объект поста */
+    /* Объект метапоста для обычного поста */
     {
       /* Добавлен ли пост в закладки */
       "bookmarked": false,
@@ -110,7 +110,7 @@ http://point.im/api/recent
       "editable": false,
       /* Рекомендован ли пост */
       "recommended": true,
-      /* Объект поста внутри объекта поста */
+      /* Объект поста */
       "post": {
         /* Массив тегов */
         "tags": [
@@ -142,6 +142,49 @@ http://point.im/api/recent
         "private": false
       }
     },
+    
+    /* Объект метапоста для рекомендованного поста */
+    {
+      "bookmarked": false,
+      "uid": 1309953,
+      "subscribed": true,
+      "editable": false,
+      "recommended": false,
+      /* Данные о рекомендации */
+      "rec": {
+        /* Текст рекомендации */
+        "text": null,
+        /* Идентификатор комментария */
+        "comment_id": null,
+        /* Пользователь, который рекомендовал пост или комментарий */
+        "author": {
+          "login": "arts",
+          "id": 1,
+          "avatar": "arts.jpg?r=4778",
+          "name": "\u0410\u0440\u0442\u0451\u043c \u0421\u0430\u0436\u0438\u043d"
+        }
+      },
+      /* Объект поста */
+      "post": {
+        "tags": [
+          "api",
+          "point",
+          "android"
+        ],
+        "comments_count": 23,
+        "author": {
+          "login": "Tishka17",
+          "id": 434,
+          "avatar": "tishka17.png?r=6953",
+          "name": "Tishka17"
+        },
+        "text": "\u041a\u0430\u043a-\u0442\u043e \u0442\u0430\u043a http://imgur.com/dUNiHeq",
+        "created": "2014-03-31T11:30:28.277053",
+        "type": "post",
+        "id": "acih",
+        "private": false
+      }
+    }
     {
       /* Следующий пост */
     }
