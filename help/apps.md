@@ -45,14 +45,7 @@
 
 Расширение для браузеров, улучшающее веб-интерфейс и добавляющее новые возможности.
 
-### Opera ###
-
 [Установить из репозитория дополнений Opera](https://addons.opera.com/ru/extensions/details/point/?display=en)
-
-### Chrome ###
-
 [Установить из Chrome Web Store](https://chrome.google.com/webstore/detail/point%20/ghaddonhnchkdjaciggjijhophciboam)
-
-### Исходный код ###
 
 [Репозиторий на BitBucket.org](https://bitbucket.org/skobkin/chrome_point_plus/overview)
