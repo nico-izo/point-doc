@@ -38,3 +38,21 @@
 Плагин для проприетарного мультипротокольного мессенджера QIP 2012.
 
 [https://github.com/Sega-Zero/point.im/releases](https://github.com/Sega-Zero/point.im/releases)
+
+# Расширения для браузеров #
+## Point+ ##
+[![Point+](/img/help/point-plus.png)](/img/help/point-plus.png)
+
+Расширение для браузеров, улучшающее веб-интерфейс и добавляющее новые возможности.
+
+### Opera ###
+
+[Установить из репозитория дополнений Opera](https://addons.opera.com/ru/extensions/details/point/?display=en)
+
+### Chrome ###
+
+[Установить из Chrome Web Store](https://chrome.google.com/webstore/detail/point%20/ghaddonhnchkdjaciggjijhophciboam)
+
+### Исходный код ###
+
+[Репозиторий на BitBucket.org](https://bitbucket.org/skobkin/chrome_point_plus/overview)
