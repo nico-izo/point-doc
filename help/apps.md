@@ -1,8 +1,8 @@
-# Приложения
-
 Для того, чтобы пользоваться сервисом, Вам не нужно ничего устанавливать — достаточно вашего любимого Jabber-клиента или любого браузера. Ну, почти любого: IE 8 и ниже мы браузером не считаем:-)
 
 Однако, некоторые программы могут помочь Вам сделать использование сервиса чуть более удобным.
+
+# Десктопные приложения
 
 ## Psi+
 
@@ -13,7 +13,7 @@
 
 Для того, чтобы включить режим XHTML-IM, просто скажите боту `set xhtml on`.
 
-[http://psi-plus.com/](http://psi-plus.com/)
+[Официальный сайт](http://psi-plus.com/)
 
 ## LeechCraft
 
@@ -21,7 +21,7 @@
 
 Мультиплатформенный модульный комбайн со встроенным jabber-клиентом, также поддерживает XHTML-IM.
 
-[http://leechcraft.org/](http://leechcraft.org/)
+[Официальный сайт](http://leechcraft.org/)
 
 ## Emacs point.el
 
@@ -29,7 +29,7 @@
 
 Для этой вундервафли от [Человека-стола](https://en.wikipedia.org/wiki/Stallman), претендующей на звание операционной системы, тоже есть велосипед.
 
-[https://github.com/rayslava/emacs-point-el](https://github.com/rayslava/emacs-point-el)
+[Исходники](https://github.com/rayslava/emacs-point-el)
 
 ## QIP 2012
 
@@ -37,10 +37,25 @@
 
 Плагин для проприетарного мультипротокольного мессенджера QIP 2012.
 
-[https://github.com/Sega-Zero/point.im/releases](https://github.com/Sega-Zero/point.im/releases)
+[Свежая сборка](https://github.com/Sega-Zero/point.im/releases)
+
+# Мобильные приложения #
+
+## jTalk
+
+[![jTalk](/docimg/help/jtalk-thumb.jpg)](/docimg/help/jtalk.png)
+
+Отличный мобильный XMPP-клиент. Теперь банановый.
+
+[Официальный сайт](http://jtalk.ustyugov.net/doku.php?id=ru:about)
+[Страница на Google Play](https://play.google.com/store/apps/details?id=com.jtalk2)
+[Последняя dev-сборка](http://files.ustyugov.net/jtalk/apks/dev/jTalk-dev-406_signed.apk)
+
+
 
 # Расширения для браузеров #
 ## Point+ ##
+
 [![Point+](/docimg/help/point-plus-thumb.jpg)](/docimg/help/point-plus.png)
 
 Расширение для браузеров, улучшающее веб-интерфейс и добавляющее новые возможности.
