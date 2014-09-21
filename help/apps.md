@@ -47,7 +47,7 @@
 
 Отличный мобильный XMPP-клиент. Теперь банановый^W с поддержкой Поинта.
 
-[Официальный сайт](http://jtalk.ustyugov.net/)
+[Официальный сайт](http://jtalk.ru/)
 [Страница на Google Play](https://play.google.com/store/apps/details?id=com.jtalk2)
 [Последняя dev-сборка](http://files.ustyugov.net/jtalk/apks/dev/)
 
