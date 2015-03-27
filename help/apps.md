@@ -41,6 +41,14 @@
 
 # Мобильные приложения #
 
+## Point
+
+[![Point.im for Android](/docimg/help/tishka-thumb.jpg)](/docimg/help/tishka.png)
+
+Почти официальный клиент, написанный @Tishka17.
+
+[Страница на Google Play](https://play.google.com/store/apps/details?id=org.itishka.pointim)
+
 ## jTalk
 
 [![jTalk](/docimg/help/jtalk-thumb.jpg)](/docimg/help/jtalk.png)
@@ -50,6 +58,14 @@
 [Официальный сайт](http://jtalk.ustyugov.net/doku.php?id=ru:about)
 [Страница на Google Play](https://play.google.com/store/apps/details?id=com.jtalk2)
 [Последняя dev-сборка](http://files.ustyugov.net/jtalk/apks/dev/jTalk-dev-406_signed.apk)
+
+## Quick Point
+
+Быстрая постилка от @torgash.
+
+[![Quick Point](/docimg/help/torgash-thumb.jpg)](/docimg/help/torgash.png)
+
+[Страница на Google Play](https://play.google.com/store/apps/details?id=pro.extenza.quickpoint)
 
 
 
