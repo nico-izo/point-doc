@@ -53,11 +53,11 @@
 
 [![jTalk](/docimg/help/jtalk-thumb.jpg)](/docimg/help/jtalk.png)
 
-Отличный мобильный XMPP-клиент. Теперь банановый.
+Отличный мобильный XMPP-клиент. Теперь банановый^W с поддержкой Поинта.
 
-[Официальный сайт](http://jtalk.ustyugov.net/doku.php?id=ru:about)
+[Официальный сайт](http://jtalk.ru/)
 [Страница на Google Play](https://play.google.com/store/apps/details?id=com.jtalk2)
-[Последняя dev-сборка](http://files.ustyugov.net/jtalk/apks/dev/jTalk-dev-406_signed.apk)
+[Последняя dev-сборка](http://files.ustyugov.net/jtalk/apks/dev/)
 
 ## Quick Point
 
