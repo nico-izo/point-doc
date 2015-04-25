@@ -109,8 +109,7 @@
 
 `#post_id/comment_number текст` или `#post_id.comment_number текст` — ответить на комментарий.
 
-`d #post_id/comment_number` or `d
-#post_id.comment_number` — удалить комментарий.
+`d #post_id/comment_number` or `d #post_id.comment_number` — удалить комментарий.
 
 `D L` или `D LAST` — удалить последний пост или комментарий.
 
