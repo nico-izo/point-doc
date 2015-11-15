@@ -447,6 +447,29 @@ POST `/api/post/<id>/<comment_id>/r`
 
 DELETE `/api/post/<id>/<comment_id>/r`
 
+## Закрепление и открепление поста ##
+
+### Закрепить пост  ###
+`POST /api/post/<id>/pin`
+### Открепить пост  ###
+`DELETE /api/post/<id>/unpin`
+
+### Возбуждаемые исключения: ###
+
+При попытке открепить незакреплённый пост возбуждается исключение `PostNotPinnedError` и сервер вернёт ответ:
+
+    {
+        "code": "405",
+        "message": "Post not pinned."
+    }
+
+Аналогично, При попытке прикрепить уже закреплённый пост возбуждается исключение `PostAlreadyPinnedError` и сервер вернёт ответ:
+
+    {
+        "code": "405",
+        "message": "Post already pinned."
+    }
+
 ## Подписка на пост ##
 
 POST `/api/post/<id>/s`
