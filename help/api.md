@@ -27,12 +27,15 @@ POST `/api/login`
 **Ответ**
 
 Пример запроса:
+
 ```
 http://point.im/api/login
 
 login=xxx&password=yyy
 ```
+
 Пример ответа:
+
 ```js
 {
   /* Авторизационный токен */
@@ -55,6 +58,7 @@ POST `/api/logout`
 **Ответ**
 
 Пример запроса:
+
 ```
 http://point.im/api/logout
 
@@ -62,6 +66,7 @@ csrf_token=109f4b3c50d7b0df729d299bc6f8e9ef9066971f
 ```
 
 Пример ответа:
+
 ```js
 { "ok": true }
 ```
@@ -88,10 +93,13 @@ GET `/api/recent`
 **Ответ**
 
 Пример запроса:
+
 ```
 http://point.im/api/recent
 ```
+
 Пример ответа:
+
 ```js
 {
   /* Наличие кнопки "Предыдущие */
@@ -206,9 +214,11 @@ GET `/api/blog/<login>`
 **Ответ**
 
 Пример запроса:
+
 ```
 http://point.im/api/blog/skobkin-ru
 ```
+
 Структура ответа аналогична `/api/recent`
 
 
@@ -227,6 +237,7 @@ GET `/api/comments`
 **Ответ**
 
 Пример запроса:
+
 ```
 http://point.im/api/comments
 ```
@@ -250,9 +261,11 @@ GET `/api/messages/incoming`
 **Ответ**
 
 Пример запроса:
+
 ```
 http://point.im/api/messages/incoming
 ```
+
 Структура ответа аналогична `/api/recent`
 
 ### Список исходящих сообщений ###
@@ -270,9 +283,11 @@ GET `/api/messages/outgoing`
 **Ответ**
 
 Пример запроса:
+
 ```
 http://point.im/api/messages/outgoing
 ```
+
 Структура ответа аналогична `/api/recent`
 
 
@@ -286,10 +301,13 @@ GET `/api/post/<post>`
 **Ответ**
 
 Пример запроса:
+
 ```
 http://point.im/api/post/llq
 ```
+
 Пример ответа:
+
 ```js
 {
   /* Объект поста */
@@ -451,6 +469,7 @@ DELETE `/api/post/<id>/<comment_id>/r`
 
 ### Закрепить пост  ###
 `POST /api/post/<id>/pin`
+
 ### Открепить пост  ###
 `DELETE /api/post/<id>/unpin`
 
@@ -458,17 +477,21 @@ DELETE `/api/post/<id>/<comment_id>/r`
 
 При попытке открепить незакреплённый пост возбуждается исключение `PostNotPinnedError` и сервер вернёт ответ:
 
-    {
-        "code": "405",
-        "message": "Post not pinned."
-    }
+```js
+{
+    "code": "405",
+    "message": "Post not pinned."
+}
+```
 
 Аналогично, При попытке прикрепить уже закреплённый пост возбуждается исключение `PostAlreadyPinnedError` и сервер вернёт ответ:
 
-    {
-        "code": "405",
-        "message": "Post already pinned."
-    }
+```js
+{
+    "code": "405",
+    "message": "Post already pinned."
+}
+```
 
 ## Подписка на пост ##
 
@@ -509,10 +532,13 @@ GET `/api/tags/<login>`
 **Ответ**
 
 Примеры запроса:
+
 ```
 http://point.im/api/tags/skobkin-ru
 ```
+
 Пример ответа:
+
 ```js
 [
   /* Объект тега */
@@ -543,13 +569,17 @@ GET `/api/tags`
 **Ответ**
 
 Пример запроса:
+
 ```
 http://point.im/api/tags?tag=guitar
 ```
+
 или
+
 ```
 http://point.im/api/tags/skobkin-ru?tag=guitar&tag=test
 ```
+
 Структура ответа аналогична `/api/recent`
 
 ### Выборка постов по тегам пользователя ###
@@ -567,13 +597,17 @@ GET `/api/tags/<login>`
 **Ответ**
 
 Примеры запросов:
+
 ```
 http://point.im/api/tags/skobkin-ru?tag=guitar
 ```
+
 или
+
 ```
 http://point.im/api/tags/skobkin-ru?tag=guitar&tag=test
 ```
+
 Структура ответа аналогична `/api/recent`
 
 # Пользователи #
@@ -669,10 +703,13 @@ http://point.im/api/tags/skobkin-ru?tag=guitar&tag=test
 авторизованным пользователем о себе самом. 
 
 **Запрос**
+
 ```
 /api/me
 ```
+
 **Ответ**
+
 ```js
 {
   /* Заметка пользователя о себе */
@@ -712,6 +749,7 @@ http://point.im/api/tags/skobkin-ru?tag=guitar&tag=test
 ### Аватар пользователя ###
 
 **Запрос**
+
 ```
 http(s)://i.point.im/a/<size>/<avatar_name.ext>
 ```
@@ -729,22 +767,23 @@ http(s)://i.point.im/a/<size>/<avatar_name.ext>
 ```
 http://i.point.im/a/24/skobkin-ru.jpg
 ```
+
 Ответ:
 
 ![24](http://i.point.im/a/24/skobkin-ru.jpg "24")
 
-
 ```
 http://i.point.im/a/40/skobkin-ru.jpg
 ```
+
 Ответ:
 
 ![40](http://i.point.im/a/40/skobkin-ru.jpg "40")
 
-
 ```
 http://i.point.im/a/80/skobkin-ru.jpg
 ```
+
 Ответ:
 
 ![80](http://i.point.im/a/80/skobkin-ru.jpg "80")
@@ -773,10 +812,13 @@ GET `/api/user/<login>/subscriptions`
 **Ответ**
 
 Пример запроса:
+
 ```
 http://point.im/api/user/skobkin-ru/subscriptions
 ```
+
 Пример ответа:
+
 ```js
 [
   /* Объект пользователя */
@@ -807,9 +849,11 @@ GET `/api/user/<login>/subscribers`
 **Ответ**
 
 Пример запроса:
+
 ```
 http://point.im/api/user/skobkin-ru/subscribers
 ```
+
 Структура ответа аналогична `/api/user/<login>/subscriptions`
 
 
@@ -824,9 +868,11 @@ GET `/api/user/wl`
 **Ответ**
 
 Пример запроса:
+
 ```
 http://point.im/api/user/wl
 ```
+
 Структура ответа аналогична `/api/user/<login>/subscriptions`
 
 ### Чёрный список пользователей ###
@@ -840,9 +886,11 @@ GET `/api/user/bl`
 **Ответ**
 
 Пример запроса:
+
 ```
 http://point.im/api/user/bl
 ```
+
 Структура ответа аналогична `/api/user/<login>/subscriptions`
 
 # WebSocket #
