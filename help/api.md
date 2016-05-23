@@ -292,6 +292,33 @@ http://point.im/api/messages/outgoing
 
 
 
+## Счётчики непрочитанных постов и комментариев ##
+
+**Запрос**
+
+GET `/api/unread`
+
+**Ответ**
+
+Пример запроса:
+
+```
+http://point.im/api/unread
+```
+
+Пример ответа:
+
+```js
+{
+    "posts": 10,
+    "comments": 314,
+    "private_posts": 1,
+    "private_comments": 3
+}
+```
+
+
+
 ## Просмотр поста ##
 
 **Запрос**
