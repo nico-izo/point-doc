@@ -296,14 +296,14 @@ http://point.im/api/messages/outgoing
 
 **Запрос**
 
-GET `/api/unread`
+GET `/api/unread-counters`
 
 **Ответ**
 
 Пример запроса:
 
 ```
-http://point.im/api/unread
+http://point.im/api/unread-counters
 ```
 
 Пример ответа:
