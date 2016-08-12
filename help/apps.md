@@ -29,6 +29,12 @@
 
 Для этой вундервафли от [Человека-стола](https://en.wikipedia.org/wiki/Stallman), претендующей на звание операционной системы, тоже есть велосипед.
 
+## Emacs point-im.el
+
+[![Emacs point-im.el](/docimg/help/emacs-point-im-el-thumb.jpg)](/docimg/help/emacs-point-im-el.png)
+
+Альтернативный вариант плагина для Emacs OS, без аватарок, но с контекстными менюшками.
+
 [Исходники](https://github.com/rayslava/emacs-point-el)
 
 ## QIP 2012
